@@ -3,9 +3,9 @@ cache:
   directories:
     - node_modules
 node_js:
-#  - "9"
-#  - "8"
-#  - "6"
+  - "9"
+  - "8"
+  - "6"
   - "4"
 sudo: required
 services:

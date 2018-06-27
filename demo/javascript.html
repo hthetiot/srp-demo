@@ -431,6 +431,10 @@
       }
       
       function update_password2() {
+
+        status_string = "Authentication....";
+        osync_status();
+
         recalc_x2();
         update_x2();
       }
@@ -708,7 +712,7 @@
    </script>
    <body bgcolor="#ffffff" text="#000000" onLoad="srp_initialize();">
       <h1>SRP in JavaScript</h1>
-      <form name="srpform" onSubmit="return false;">
+      <form name="srpform" onsubmit="change_password2()">
          Radix:
          <input type="radio" name="radixb" value="10" onClick="set_radix(10);">10
          <input type="radio" name="radixb" value="16" onClick="set_radix(16);" checked>16
@@ -849,6 +853,7 @@
          </table>
          <hr>
          Status: <input name="srp_status" type="text" value="Initializing..." size=40>
+         <button type="button" onclick="change_password2()">Check Client Password</button>
       </form>
    </body>
 </html>

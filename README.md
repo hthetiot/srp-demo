@@ -1,6 +1,6 @@
 # Secure Remote Password (SRP) JavaScript Demo
 
-This demo uses a combination of JavaScript and Java to demonstrate the mathematical steps behind the Secure Remote Password Protocol.
+This demo uses a combination of JavaScript and/or Java to demonstrate the mathematical steps behind the Secure Remote Password Protocol.
 
 # Run demo locally
 
@@ -37,5 +37,5 @@ than SRP must include the following acknowledgement:
 
     This software incorporates components derived from the
     Secure Remote Password JavaScript demo developed by
-    Tom Wu (tjw@CS.Stanford.EDU)."
+    Tom Wu (tjw@CS.Stanford.EDU).
 
