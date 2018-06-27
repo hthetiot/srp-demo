@@ -1,0 +1,54 @@
+{
+  "name": "srp-demo",
+  "version": "1.0.0",
+  "description": "Secure Remote Password protocol Demo",
+  "main": "lib/srp.js",
+  "author": "Harold Thetiot",
+  "license": "Copyright (c) 1997-2004  The Stanford SRP Authentication Project All Rights Reserved.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hthetiot/srp-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hthetiot/srp-demo/issues"
+  },
+  "homepage": "https://github.com/hthetiot/srp-demo#README.md",
+  "exclude": [
+    "test",
+    "coverage"
+  ],
+  "engines": {
+    "node": ">=4.x.x"
+  },
+  "scripts": {
+    "start": "http-server demo -p 8080",
+    "lint": "jshint .",
+    "test": "npm run test:istanbul",
+    "test:nsp": "nsp check",
+    "test:mocha": "mocha test/spec/*-spec.js --exit",
+    "test:istanbul": "istanbul cover _mocha -- test/spec/*-spec.js --exit",
+    "serve:test": "http-server -p 8081 .",
+    "serve:doc": "http-server -p 8082 doc",
+    "open:test": "open http://localhost:8081/test",
+    "open:doc": "open http://localhost:8082",
+    "integration": "concurrently \"npm run serve:test\" \"npm run open:test\"",
+    "doc": "concurrently \"npm run serve:doc\" \"npm run open:doc\"",
+    "build:docker": "docker build . -t srp-demo:develop-SNAPSHOT",
+    "start:docker": "docker run -d -p 8080:8080 srp-demo:develop-SNAPSHOT"
+  },
+  "dependencies": {
+    "big-integer": "^1.6.32",
+    "sha1": "^1.1.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "concurrently": "^3.5.1",
+    "http-server": "^0.11.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.0.5",
+    "nodemon": "^1.17.5",
+    "nsp": "^2.8.1",
+    "open": "0.0.5"
+  }
+}

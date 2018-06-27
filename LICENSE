@@ -1,0 +1,12 @@
+
+Copyright (c) 1997-2004  The Stanford SRP Authentication Project
+All Rights Reserved.
+
+See http://srp.stanford.edu/license.txt for details.
+
+ Any use of this software to demo cryptographic technology other
+than SRP must include the following acknowledgement:
+
+    "This software incorporates components derived from the
+    Secure Remote Password JavaScript demo developed by
+    Tom Wu (tjw@CS.Stanford.EDU)."
