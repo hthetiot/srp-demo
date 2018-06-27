@@ -9,7 +9,9 @@ describe('srp-demo', () => {
   describe('SrpClient', () => {
       it('setPassword', (done) => {
     		  var srp = new SrpClient();
+          srp.setUsername('test');
     		  srp.setPassword('password');
+          srp.checkPassword('password');
     		  expect(srp.data.srp_status).to.equal('Authentication succeeded');
           done();
       });
