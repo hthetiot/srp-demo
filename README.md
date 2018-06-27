@@ -15,11 +15,12 @@ Then Open Browser on [http://localhost:8080](http://localhost:8080) to start dem
 
 # About Secure Remote Password (SRP)
 
-    SRP is a protocol which was created by Thomas Wu at Stanford University to allow the secure authentication based on a user name and a password.
-    The protocol is robust i.e. tolerates wide range of attacks, preventing an attack on any part or parts of the system from leading to further security compromises.
+  SRP is a protocol which was created by Thomas Wu at Stanford University to allow the secure authentication based on a user name and a password.
 
-    It does not require any trusted third party (e.g. a certificate issuer or PKI) which makes it very comfortable to use.
-    For technical details please refer to SRP home page or detailed SRP paper or protocol summary.
+  The protocol is robust i.e. tolerates wide range of attacks, preventing an attack on any part or parts of the system from leading to further security compromises.
+
+  It does not require any trusted third party (e.g. a certificate issuer or PKI) which makes it very comfortable to use.
+For technical details please refer to SRP home page or detailed SRP paper or protocol summary.
 
 The following diagram shows how the SRP sequence is implemented in this example:
 
