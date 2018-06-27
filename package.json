@@ -34,7 +34,8 @@
     "integration": "concurrently \"npm run serve:test\" \"npm run open:test\"",
     "doc": "concurrently \"npm run serve:doc\" \"npm run open:doc\"",
     "build:docker": "docker build . -t srp-demo:develop-SNAPSHOT",
-    "start:docker": "docker run -d -p 8080:8080 srp-demo:develop-SNAPSHOT"
+    "start:docker": "docker run -d -p 8080:8080 srp-demo:develop-SNAPSHOT",
+    "publish:gh-pages": "git checkout gh-pages && git subtree push --prefix demo origin gh-pages"
   },
   "dependencies": {
     "big-integer": "^1.6.32",
